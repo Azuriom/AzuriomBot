@@ -1,0 +1,24 @@
+{
+  "name": "azuriom-bot",
+  "version": "1.0.0",
+  "description": "Support bot for Azuriom Discord server.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Azuriom/AzuriomBot.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node build/bot.js",
+    "format": "biome format --write ./src",
+    "lint": "biome check ./src"
+  },
+  "author": "Azuriom",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "typescript": "^5.4.5"
+  }
+}
